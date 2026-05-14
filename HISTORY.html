@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>History of PSAU</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(to right, #eef8ee, #f7fff7);
+    color:#1b4332;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    background:#2e7d32;
+    color:white;
+    padding:25px 50px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size:38px;
+}
+
+header p{
+    margin-top:8px;
+    opacity:0.9;
+}
+
+/* HERO */
+
+.hero{
+    height:55vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:60px;
+    color:#2e7d32;
+    margin-bottom:15px;
+    animation:fadeDown 1.2s ease;
+}
+
+.hero p{
+    max-width:750px;
+    color:#555;
+    font-size:20px;
+    line-height:1.7;
+    animation:fadeUp 1.5s ease;
+}
+
+/* TIMELINE SECTION */
+
+.timeline-section{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+    position:relative;
+}
+
+.timeline-section::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+    width:5px;
+    height:100%;
+    background:#66bb6a;
+    border-radius:10px;
+}
+
+/* TIMELINE CARD */
+
+.timeline-card{
+    width:45%;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    position:relative;
+    margin-bottom:50px;
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.timeline-card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.timeline-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.timeline-card h3{
+    color:#2e7d32;
+    margin-bottom:12px;
+    font-size:28px;
+}
+
+.timeline-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* LEFT & RIGHT */
+
+.left{
+    left:0;
+}
+
+.right{
+    left:55%;
+}
+
+/* CIRCLE */
+
+.timeline-card::after{
+    content:"";
+    position:absolute;
+    top:30px;
+    width:22px;
+    height:22px;
+    background:#2e7d32;
+    border:5px solid #c8e6c9;
+    border-radius:50%;
+}
+
+.left::after{
+    right:-60px;
+}
+
+.right::after{
+    left:-60px;
+}
+
+/* ICON */
+
+.icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:70px;
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .timeline-section::before{
+        left:20px;
+    }
+
+    .timeline-card{
+        width:100%;
+        left:0 !important;
+        padding-left:70px;
+    }
+
+    .timeline-card::after{
+        left:5px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>Agri PSAU</h1>
+
+    <p>History of Pampanga State Agricultural University</p>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h2>History of PSAU</h2>
+
+    <p>
+        Discover the inspiring journey of Pampanga State Agricultural University
+        from its humble beginnings to becoming one of the leading agricultural
+        institutions in the Philippines.
+    </p>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="timeline-section">
+
+    <!-- CARD 1 -->
+
+    <div class="timeline-card left">
+
+        <div class="icon">🌱</div>
+
+        <h3>1885</h3>
+
+        <p>
+            PSAU started as Estacion Pecuaria,
+            a livestock station established during the Spanish period
+            in Magalang, Pampanga.
+        </p>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="timeline-card right">
+
+        <div class="icon">🏫</div>
+
+        <h3>Farm School Era</h3>
+
+        <p>
+            The institution later evolved into an agricultural farm school,
+            helping students gain knowledge and skills in farming and livestock.
+        </p>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="timeline-card left">
+
+        <div class="icon">📚</div>
+
+        <h3>1965</h3>
+
+        <p>
+            It officially became Pampanga Agricultural College (PAC),
+            expanding its academic programs and research initiatives.
+        </p>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="timeline-card right">
+
+        <div class="icon">🔬</div>
+
+        <h3>Research & Technology</h3>
+
+        <p>
+            PAC became known for innovation, agricultural research,
+            and technology development benefiting communities and farmers.
+        </p>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="timeline-card left">
+
+        <div class="icon">🎓</div>
+
+        <h3>2013</h3>
+
+        <p>
+            Through Republic Act 10605,
+            Pampanga Agricultural College officially became
+            Pampanga State Agricultural University (PSAU).
+        </p>
+
+    </div>
+
+    <!-- CARD 6 -->
+
+    <div class="timeline-card right">
+
+        <div class="icon">🌍</div>
+
+        <h3>Today</h3>
+
+        <p>
+            PSAU is now recognized as a premier institution
+            focusing on agriculture, technology, education,
+            innovation, and global competitiveness.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Agri PSAU | History of PSAU
+    </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* SCROLL ANIMATION */
+
+const cards = document.querySelectorAll(".timeline-card");
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+
+    });
+
+}, {threshold:0.2});
+
+cards.forEach(card => observer.observe(card));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSAU Library</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:linear-gradient(135deg, #0b3d2e, #14532d, #166534);
+        color:white;
+        min-height:100vh;
+        padding:50px 20px;
+    }
+
+    .container{
+        max-width:1200px;
+        margin:auto;
+    }
+
+    .title{
+        text-align:center;
+        font-size:50px;
+        margin-bottom:40px;
+        text-shadow:0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.08);
+        border:1px solid rgba(255,255,255,0.12);
+        backdrop-filter:blur(10px);
+        border-radius:20px;
+        padding:25px;
+        transition:0.4s;
+        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+        transform:translateY(-10px);
+        box-shadow:0 15px 35px rgba(0,0,0,0.5);
+    }
+
+    .card h2{
+        margin-bottom:15px;
+        font-size:22px;
+        color:#d1fae5;
+    }
+
+    .card p, .card li{
+        font-size:14px;
+        line-height:1.7;
+        color:#ecfdf5;
+    }
+
+    ul{
+        padding-left:18px;
+        margin-top:10px;
+    }
+
+    .section-title{
+        font-size:18px;
+        margin-top:15px;
+        margin-bottom:10px;
+        color:#a7f3d0;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="title">University Library</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>📚 Brief History</h2>
+            <p>
+                The University Library is a three-storey building located along PSAU Main Boulevard (Mango Ave.), 
+                near the University Food Center and in front of the Multipurpose Center. It has a total floor area 
+                of 1,500 sq.m and was inaugurated on September 9, 2011.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Mission</h2>
+            <p>
+                To provide updated informational resources, client-centered services, and technological advancement 
+                that support students’ learning and strengthen instructional, research, and extension programs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🌍 Vision</h2>
+            <p>
+                A technologically equipped library that serves as a center for agricultural information, 
+                locally and globally competitive among educational institutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📖 Working Philosophy (READ)</h2>
+            <p><b>R</b> – Rearing the PSAU community towards</p>
+            <p><b>E</b> – Excellent education by</p>
+            <p><b>A</b> – Adapting modern library trends</p>
+            <p><b>D</b> – Developing passion for reading and research</p>
+        </div>
+
+        <div class="card">
+            <h2>🎓 Goals & Objectives</h2>
+
+            <div class="section-title">Students</div>
+            <ul>
+                <li>Assess use of physical and virtual resources</li>
+                <li>Gather student input for improvement</li>
+                <li>Customize services for learning needs</li>
+            </ul>
+
+            <div class="section-title">Faculty & Staff</div>
+            <ul>
+                <li>Support information dissemination</li>
+                <li>Strengthen library partnerships</li>
+                <li>Improve research services collaboration</li>
+            </ul>
+
+            <div class="section-title">Collections</div>
+            <ul>
+                <li>Assess and improve library materials</li>
+                <li>Purchase print and non-print resources</li>
+                <li>Improve access through technology</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>💻 Automation & E-Learning</h2>
+            <ul>
+                <li>Promote OPAC system usage</li>
+                <li>Upgrade e-library hardware and software</li>
+                <li>Evaluate e-learning programs regularly</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>👥 Library Staff Development</h2>
+            <ul>
+                <li>Hire additional librarians and assistants</li>
+                <li>Attend training and seminars</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📣 Library Services Promotion</h2>
+            <ul>
+                <li>Conduct library orientations</li>
+                <li>Celebrate National Book Week</li>
+                <li>Organize Book Fairs and Book Lovers Club</li>
+                <li>Join local and international library networks</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>⚠️ Proper Conduct in the Library</h2>
+            <ul>
+                <li>No noise, disturbance, or abusive behavior</li>
+                <li>No food or smoking inside the library</li>
+                <li>Phones allowed but must not disturb others</li>
+                <li>Respect other users and library spaces</li>
+                <li>No reserving seats with personal items</li>
+                <li>Follow proper furniture and equipment use</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

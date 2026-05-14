@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSAU Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#006633;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* NAVBAR */
+nav{
+    background:#004d26;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffcc00;
+}
+
+/* HERO */
+.hero{
+    height:400px;
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://via.placeholder.com/1400x500');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+/* CONTENT */
+.content{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h2{
+    color:#006633;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    line-height:1.6;
+}
+
+/* BUTTON */
+button{
+    margin-top:15px;
+    background:#006633;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00994d;
+}
+
+/* FOOTER */
+footer{
+    background:#004d26;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:32px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pampanga State Agricultural University</h1>
+    <p>Official PSAU Student Portal</p>
+</header>
+
+<nav>
+    <a href="#history">History</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#core">Core Values</a>
+    <a href="#agriculture">Agriculture</a>
+    <a href="#technology">Technology</a>
+    <a href="#graduate">Graduate Studies</a>
+    <a href="#research">Research</a>
+    <a href="#library">Library</a>
+    <a href="#registrar">Registrar</a>
+    <a href="#health">Health</a>
+    <a href="#support">Support</a>
+    <a href="#freshmen">Freshmen</a>
+    <a href="#transferees">Transferees</a>
+    <a href="#international">International</a>
+    <a href="#forms">Forms</a>
+    <a href="#handbook">Handbook</a>
+    <a href="#freedom">Freedom Wall</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to PSAU</h1>
+</section>
+
+<section class="content">
+
+    <!-- History -->
+    <div class="card" id="history">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>History of PSAU</h2>
+            <p>
+                Placeholder text for the history of Pampanga State Agricultural University.
+            </p>
+            <button onclick="showMessage('History of PSAU')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="card" id="leadership">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Leadership Team</h2>
+            <p>
+                Placeholder text for the PSAU leadership team.
+            </p>
+            <button onclick="showMessage('Leadership Team')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="card" id="core">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Core Values</h2>
+            <p>
+                Placeholder text for PSAU core values.
+            </p>
+            <button onclick="showMessage('Core Values')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Agriculture -->
+    <div class="card" id="agriculture">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Agriculture Programs</h2>
+            <p>
+                Placeholder text for agriculture programs.
+            </p>
+            <button onclick="showMessage('Agriculture Programs')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Technology -->
+    <div class="card" id="technology">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Technology Programs</h2>
+            <p>
+                Placeholder text for technology programs.
+            </p>
+            <button onclick="showMessage('Technology Programs')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Graduate -->
+    <div class="card" id="graduate">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Graduate Studies</h2>
+            <p>
+                Placeholder text for graduate studies.
+            </p>
+            <button onclick="showMessage('Graduate Studies')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Research -->
+    <div class="card" id="research">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Research Opportunities</h2>
+            <p>
+                Placeholder text for research opportunities.
+            </p>
+            <button onclick="showMessage('Research Opportunities')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Library -->
+    <div class="card" id="library">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Library</h2>
+            <p>
+                Placeholder text for library services.
+            </p>
+            <button onclick="showMessage('Library')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Registrar -->
+    <div class="card" id="registrar">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Registrar</h2>
+            <p>
+                Placeholder text for registrar services.
+            </p>
+            <button onclick="showMessage('Registrar')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Health -->
+    <div class="card" id="health">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Health Services</h2>
+            <p>
+                Placeholder text for health services.
+            </p>
+            <button onclick="showMessage('Health Services')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Support -->
+    <div class="card" id="support">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Student Support</h2>
+            <p>
+                Placeholder text for student support.
+            </p>
+            <button onclick="showMessage('Student Support')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Freshmen -->
+    <div class="card" id="freshmen">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Freshmen</h2>
+            <p>
+                Placeholder text for freshmen admissions.
+            </p>
+            <button onclick="showMessage('Freshmen')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Transferees -->
+    <div class="card" id="transferees">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Transferees</h2>
+            <p>
+                Placeholder text for transferees.
+            </p>
+            <button onclick="showMessage('Transferees')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- International -->
+    <div class="card" id="international">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>International Students</h2>
+            <p>
+                Placeholder text for international students.
+            </p>
+            <button onclick="showMessage('International Students')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Forms -->
+    <div class="card" id="forms">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Downloadable Forms</h2>
+            <p>
+                Placeholder text for downloadable forms.
+            </p>
+            <button onclick="showMessage('Downloadable Forms')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Handbook -->
+    <div class="card" id="handbook">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Student Handbook</h2>
+            <p>
+                Placeholder text for student handbook.
+            </p>
+            <button onclick="showMessage('Student Handbook')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Freedom Wall -->
+    <div class="card" id="freedom">
+        <img src="https://via.placeholder.com/1200x400" alt="">
+        <div class="card-content">
+            <h2>Student Freedom Wall</h2>
+            <p>
+                Placeholder text for student freedom wall.
+            </p>
+            <button onclick="showMessage('Student Freedom Wall')">Learn More</button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Pampanga State Agricultural University</p>
+</footer>
+
+<script>
+function showMessage(page){
+    alert("Welcome to " + page + "!");
+}
+</script>
+
+</body>
+</html>

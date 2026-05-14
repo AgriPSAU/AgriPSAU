@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrar’s Office</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        min-height:100vh;
+        background:linear-gradient(135deg, #0f3d2e, #14532d, #166534);
+        color:white;
+        padding:50px 20px;
+    }
+
+    .container{
+        max-width:1200px;
+        margin:auto;
+    }
+
+    .title{
+        text-align:center;
+        font-size:50px;
+        margin-bottom:40px;
+        text-shadow:0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.08);
+        border:1px solid rgba(255,255,255,0.12);
+        backdrop-filter:blur(10px);
+        border-radius:20px;
+        padding:25px;
+        transition:0.4s;
+        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+        transform:translateY(-10px);
+        box-shadow:0 15px 35px rgba(0,0,0,0.5);
+    }
+
+    .card h2{
+        margin-bottom:15px;
+        font-size:22px;
+        color:#d1fae5;
+    }
+
+    .card p, .card li{
+        font-size:14px;
+        line-height:1.7;
+        color:#ecfdf5;
+    }
+
+    ul{
+        padding-left:18px;
+        margin-top:10px;
+    }
+
+    .section-title{
+        margin-top:12px;
+        font-weight:bold;
+        color:#a7f3d0;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="title">Registrar’s Office</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>📄 Brief History</h2>
+            <p>
+                The Registrar’s Office is located inside the university and serves students, faculty, and staff.
+                It handles student records and important school documents.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Mission</h2>
+            <p>
+                To provide accurate records, fast service, and updated systems that support students, teachers,
+                and staff.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🌍 Vision</h2>
+            <p>
+                The Registrar’s Office aims to be modern, organized, and trusted in managing student records and
+                services, and to be at par with other institutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎓 Goals & Objectives</h2>
+
+            <div class="section-title">1. Services to Students</div>
+            <ul>
+                <li>Provide correct and updated records</li>
+                <li>Listen to student feedback</li>
+                <li>Improve services based on student needs</li>
+            </ul>
+
+            <div class="section-title">2. Services to Faculty & Staff</div>
+            <ul>
+                <li>Support academic and administrative needs</li>
+                <li>Work together for better record management</li>
+                <li>Assist in school processes</li>
+            </ul>
+
+            <div class="section-title">3. Records Management</div>
+            <ul>
+                <li>Keep records safe and organized</li>
+                <li>Update and check data regularly</li>
+                <li>Provide easy access to documents</li>
+            </ul>
+
+            <div class="section-title">4. Technology & Systems</div>
+            <ul>
+                <li>Use digital systems for faster service</li>
+                <li>Improve online services</li>
+                <li>Upgrade systems when needed</li>
+            </ul>
+
+            <div class="section-title">5. Staff Development</div>
+            <ul>
+                <li>Add staff if needed</li>
+                <li>Attend trainings and seminars</li>
+            </ul>
+
+            <div class="section-title">6. Promotion & Awareness</div>
+            <ul>
+                <li>Inform students about registrar services</li>
+                <li>Guide students on requirements</li>
+                <li>Coordinate with other offices</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>⚠️ Proper Conduct in the Office</h2>
+            <ul>
+                <li>Be respectful and patient</li>
+                <li>Follow instructions and procedures</li>
+                <li>Keep the area quiet and orderly</li>
+                <li>No cutting of lines</li>
+                <li>Prepare complete requirements before transactions</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Handbook</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(to right, #edf7ed, #f7fff7);
+    min-height:100vh;
+    color:#1b4332;
+}
+
+/* HEADER */
+
+header{
+    background:#2e7d32;
+    color:white;
+    padding:25px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:70px 20px 50px;
+}
+
+.hero h2{
+    font-size:50px;
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#555;
+    line-height:1.7;
+    font-size:18px;
+}
+
+/* SEARCH */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin-bottom:45px;
+}
+
+.search-box input{
+    width:350px;
+    max-width:90%;
+    padding:14px 20px;
+    border:none;
+    border-radius:40px;
+    outline:none;
+    font-size:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* HANDBOOK GRID */
+
+.handbook-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:30px;
+    padding-bottom:60px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px 25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* EMOJI ICON */
+
+.icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:22px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:13px 28px;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1b5e20;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+    background:linear-gradient(to right, #121212, #1f1f1f);
+    color:white;
+}
+
+.dark-mode .card{
+    background:#252525;
+}
+
+.dark-mode .card p,
+.dark-mode .hero p{
+    color:#ddd;
+}
+
+.dark-mode .search-box input{
+    background:#333;
+    color:white;
+}
+
+.dark-mode footer{
+    background:#0b2e13;
+}
+
+/* DARK MODE BUTTON */
+
+.theme-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:14px 18px;
+    border-radius:50px;
+    cursor:pointer;
+    z-index:1000;
+    transition:0.3s;
+}
+
+.theme-btn:hover{
+    background:#1b5e20;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .hero h2{
+        font-size:38px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div>
+        <h1>Agri PSAU</h1>
+        <p>Official Student Handbook Portal</p>
+    </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h2>Student Handbook</h2>
+
+    <p>
+        Explore university policies, student rights,
+        academic rules, campus services, and important
+        student guidelines.
+    </p>
+
+</section>
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+    <input type="text" id="searchInput" placeholder="Search handbook topics...">
+
+</div>
+
+<!-- HANDBOOK CONTENT -->
+
+<section class="handbook-container">
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+        <div class="icon">📘</div>
+
+        <h3>University Rules</h3>
+
+        <p>
+            Learn about campus regulations and student responsibilities.
+        </p>
+
+        <a href="#" class="btn" onclick="openGuide(event)">
+            Read More
+        </a>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+        <div class="icon">🎓</div>
+
+        <h3>Academic Policies</h3>
+
+        <p>
+            Understand grading systems, attendance rules, and exams.
+        </p>
+
+        <a href="#" class="btn" onclick="openGuide(event)">
+            Read More
+        </a>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+        <div class="icon">🏫</div>
+
+        <h3>Campus Services</h3>
+
+        <p>
+            Information about registrar, clinic, library, and guidance office.
+        </p>
+
+        <a href="#" class="btn" onclick="openGuide(event)">
+            Read More
+        </a>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="card">
+
+        <div class="icon">👨‍🎓</div>
+
+        <h3>Student Rights</h3>
+
+        <p>
+            Learn about student rights, responsibilities, and code of conduct.
+        </p>
+
+        <a href="#" class="btn" onclick="openGuide(event)">
+            Read More
+        </a>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="card">
+
+        <div class="icon">📝</div>
+
+        <h3>Graduation Requirements</h3>
+
+        <p>
+            Review graduation policies and clearance procedures.
+        </p>
+
+        <a href="#" class="btn" onclick="openGuide(event)">
+            Read More
+        </a>
+
+    </div>
+
+    <!-- CARD 6 -->
+
+    <div class="card">
+
+        <div class="icon">🌱</div>
+
+        <h3>Student Organizations</h3>
+
+        <p>
+            Discover student clubs, organizations, and leadership activities.
+        </p>
+
+        <a href="#" class="btn" onclick="openGuide(event)">
+            Read More
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Agri PSAU | Student Handbook
+    </p>
+
+</footer>
+
+<!-- DARK MODE BUTTON -->
+
+<button class="theme-btn" onclick="toggleTheme()">
+    🌙 Dark Mode
+</button>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* FAKE OPEN */
+
+function openGuide(event){
+
+    event.preventDefault();
+
+    alert("Opening handbook section...");
+
+}
+
+/* SEARCH */
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(){
+
+    let filter = searchInput.value.toLowerCase();
+
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+
+        let text = card.innerText.toLowerCase();
+
+        if(text.includes(filter)){
+            card.style.display = "block";
+        }
+        else{
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+/* DARK MODE */
+
+function toggleTheme(){
+
+    document.body.classList.toggle("dark-mode");
+
+    const btn = document.querySelector(".theme-btn");
+
+    if(document.body.classList.contains("dark-mode")){
+        btn.innerHTML = "☀️ Light Mode";
+    }
+    else{
+        btn.innerHTML = "🌙 Dark Mode";
+    }
+
+}
+
+</script>
+
+</body>
+</html>

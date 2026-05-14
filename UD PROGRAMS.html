@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CASTech Programs</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:linear-gradient(135deg, #1b5e20, #4caf50);
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:40px;
+    }
+
+    .container{
+        max-width:1200px;
+        width:100%;
+    }
+
+    .title{
+        text-align:center;
+        color:white;
+        font-size:45px;
+        margin-bottom:50px;
+        text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:white;
+        border-radius:20px;
+        padding:30px;
+        transition:0.4s;
+        box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        position:relative;
+        overflow:hidden;
+    }
+
+    .card::before{
+        content:'';
+        position:absolute;
+        width:100%;
+        height:8px;
+        background:#2e7d32;
+        top:0;
+        left:0;
+    }
+
+    .card:hover{
+        transform:translateY(-10px) scale(1.03);
+        box-shadow:0 15px 35px rgba(0,0,0,0.3);
+    }
+
+    .icon{
+        font-size:50px;
+        margin-bottom:20px;
+    }
+
+    .card h2{
+        color:#1b5e20;
+        margin-bottom:15px;
+        font-size:24px;
+    }
+
+    .card p{
+        color:#555;
+        line-height:1.6;
+        font-size:15px;
+    }
+
+    .badge{
+        display:inline-block;
+        margin-top:20px;
+        padding:8px 15px;
+        background:#e8f5e9;
+        color:#1b5e20;
+        border-radius:30px;
+        font-size:13px;
+        font-weight:bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="title">Undergraduate Programs (CASTech)</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🌾</div>
+            <h2>BS Agriculture</h2>
+            <p>
+                Learn modern farming, crop production, and animal care with majors in 
+                <b>Animal Science</b> and <b>Crop Science</b>.
+            </p>
+            <span class="badge">Agriculture Program</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h2>BSABE</h2>
+            <p>
+                Focuses on agricultural mechanization, post-production technology,
+                irrigation systems, and natural resource management.
+            </p>
+            <span class="badge">Engineering Program</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐟</div>
+            <h2>BS Fisheries</h2>
+            <p>
+                Study aquatic resources, fish production, marine ecosystems,
+                and sustainable fisheries management.
+            </p>
+            <span class="badge">Aquatic Resources</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌳</div>
+            <h2>BS Forestry & Agroforestry</h2>
+            <p>
+                Covers forest conservation, environmental protection,
+                and tree-based land-use systems for sustainable development.
+            </p>
+            <span class="badge">Environmental Program</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

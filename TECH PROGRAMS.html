@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology Programs</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        min-height:100vh;
+        padding:50px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .container{
+        width:100%;
+        max-width:1300px;
+    }
+
+    .title{
+        text-align:center;
+        color:white;
+        font-size:48px;
+        margin-bottom:50px;
+        text-shadow:0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.08);
+        border:1px solid rgba(255,255,255,0.1);
+        backdrop-filter:blur(10px);
+        border-radius:20px;
+        padding:30px;
+        color:white;
+        transition:0.4s;
+        position:relative;
+        overflow:hidden;
+        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+        transform:translateY(-10px) scale(1.03);
+        box-shadow:0 15px 35px rgba(0,0,0,0.5);
+    }
+
+    .card::before{
+        content:'';
+        position:absolute;
+        top:0;
+        left:-100%;
+        width:100%;
+        height:100%;
+        background:linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.15),
+            transparent
+        );
+        transition:0.7s;
+    }
+
+    .card:hover::before{
+        left:100%;
+    }
+
+    .icon{
+        font-size:55px;
+        margin-bottom:20px;
+    }
+
+    .card h2{
+        margin-bottom:15px;
+        font-size:24px;
+    }
+
+    .card p{
+        line-height:1.7;
+        color:#e0e0e0;
+        font-size:15px;
+    }
+
+    .tag{
+        display:inline-block;
+        margin-top:20px;
+        padding:8px 15px;
+        border-radius:30px;
+        background:rgba(255,255,255,0.15);
+        font-size:13px;
+        font-weight:bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="title">Technology Programs</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h2>BS Information Technology</h2>
+            <p>
+                A four-year program focusing on software development,
+                network management, IT infrastructure, and technology
+                solutions for business and agriculture.
+            </p>
+            <div class="tag">BSIT</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤖</div>
+            <h2>BS Computer Engineering</h2>
+            <p>
+                Combines computer science and electrical engineering
+                with training in robotics, cybersecurity,
+                embedded systems, and software development.
+            </p>
+            <div class="tag">BSCpE</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h2>BS Agricultural & Biosystems Engineering</h2>
+            <p>
+                Applies engineering principles to agriculture,
+                focusing on farm mechanization, automation,
+                and natural resource technologies.
+            </p>
+            <div class="tag">BSABE</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛰️</div>
+            <h2>BS Geodetic Engineering</h2>
+            <p>
+                Focuses on land surveying, mapping technologies,
+                remote sensing, and geographic information systems (GIS).
+            </p>
+            <div class="tag">Geodetic Engineering</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h2>Bachelor of Technology and Livelihood Education</h2>
+            <p>
+                Prepares future educators for technical vocational tracks,
+                including specialization in Industrial Arts.
+            </p>
+            <div class="tag">BTLE</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

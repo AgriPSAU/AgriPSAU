@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Opportunities</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        min-height:100vh;
+        background:linear-gradient(135deg, #0f172a, #14532d, #166534);
+        color:white;
+        overflow-x:hidden;
+    }
+
+    .hero{
+        text-align:center;
+        padding:80px 20px 50px;
+    }
+
+    .hero h1{
+        font-size:55px;
+        margin-bottom:20px;
+        text-shadow:0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .hero p{
+        max-width:800px;
+        margin:auto;
+        font-size:18px;
+        line-height:1.8;
+        color:#d1fae5;
+    }
+
+    .container{
+        max-width:1200px;
+        margin:auto;
+        padding:40px 20px 80px;
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        gap:30px;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.08);
+        border:1px solid rgba(255,255,255,0.1);
+        border-radius:25px;
+        padding:35px;
+        backdrop-filter:blur(10px);
+        transition:0.4s;
+        position:relative;
+        overflow:hidden;
+        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+        transform:translateY(-12px) scale(1.03);
+        box-shadow:0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .card::before{
+        content:'';
+        position:absolute;
+        width:150px;
+        height:150px;
+        background:rgba(255,255,255,0.08);
+        border-radius:50%;
+        top:-60px;
+        right:-60px;
+    }
+
+    .icon{
+        font-size:60px;
+        margin-bottom:20px;
+        position:relative;
+        z-index:2;
+    }
+
+    .card h2{
+        font-size:28px;
+        margin-bottom:15px;
+        position:relative;
+        z-index:2;
+    }
+
+    .card p{
+        font-size:15px;
+        line-height:1.8;
+        color:#ecfdf5;
+        position:relative;
+        z-index:2;
+    }
+
+    .tag{
+        display:inline-block;
+        margin-top:20px;
+        padding:8px 16px;
+        border-radius:30px;
+        background:rgba(255,255,255,0.12);
+        font-size:13px;
+        font-weight:bold;
+        position:relative;
+        z-index:2;
+    }
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>Research Opportunities</h1>
+
+    <p>
+        Agri PSAU continues to lead innovation 
+        in agriculture, science, and sustainability through advanced research 
+        programs and collaborations that support national and global development.
+    </p>
+</section>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🔬</div>
+            <h2>DOST-STRAND-N Institution</h2>
+
+            <p>
+                PSAU is recognized as a 
+                <b>DOST-STRAND-N delivering institution</b> 
+                for graduate studies, supporting advanced research, 
+                innovation, and scientific development.
+            </p>
+
+            <div class="tag">Graduate Research</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h2>Sustainable Development</h2>
+
+            <p>
+                Research programs focus on 
+                <b>sustainable agriculture</b>, 
+                <b>food security</b>, and 
+                <b>environmental stewardship</b>, 
+                aligned with the United Nations Sustainable Development Goals.
+            </p>
+
+            <div class="tag">UN SDG Aligned</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌾</div>
+            <h2>Crop Innovation</h2>
+
+            <p>
+                The university hosts research on 
+                <b>sweet sorghum</b> and other 
+                high-value crops to improve agricultural productivity, 
+                sustainability, and economic growth.
+            </p>
+
+            <div class="tag">Agricultural Innovation</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

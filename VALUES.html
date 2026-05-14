@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Core Values</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(to right, #eef8ee, #f8fff8);
+    color:#1b4332;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size:38px;
+}
+
+header p{
+    margin-top:8px;
+    opacity:0.9;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:70px 20px 50px;
+}
+
+.hero h2{
+    font-size:55px;
+    color:#2e7d32;
+    margin-bottom:15px;
+    animation:fadeDown 1s ease;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+    line-height:1.8;
+    font-size:19px;
+    animation:fadeUp 1.3s ease;
+}
+
+/* VALUES SECTION */
+
+.values-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:30px;
+    padding-bottom:70px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:35px 25px;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+
+.icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+/* TEXT */
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* QUOTE SECTION */
+
+.quote-section{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto 80px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.quote-section h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+    font-size:38px;
+}
+
+.quote-section p{
+    color:#555;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .quote-section h2{
+        font-size:30px;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>Agri PSAU</h1>
+
+    <p>University Core Values</p>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h2>Core Values</h2>
+
+    <p>
+        Pampanga State Agricultural University is guided by strong
+        principles that promote responsible leadership, meaningful service,
+        innovation, and sustainable development for the community and nation.
+    </p>
+
+</section>
+
+<!-- VALUES -->
+
+<section class="values-container">
+
+    <!-- VALUE 1 -->
+
+    <div class="card">
+
+        <div class="icon">👨‍👩‍👧‍👦</div>
+
+        <h3>People-Centered</h3>
+
+        <p>
+            PSAU values the welfare, growth, and empowerment
+            of students, employees, stakeholders, and communities.
+        </p>
+
+    </div>
+
+    <!-- VALUE 2 -->
+
+    <div class="card">
+
+        <div class="icon">🧠</div>
+
+        <h3>Systems Thinking</h3>
+
+        <p>
+            The university promotes critical thinking,
+            innovation, and understanding of interconnected systems
+            for effective problem-solving.
+        </p>
+
+    </div>
+
+    <!-- VALUE 3 -->
+
+    <div class="card">
+
+        <div class="icon">✅</div>
+
+        <h3>Accountability</h3>
+
+        <p>
+            PSAU encourages responsibility, transparency,
+            integrity, and commitment in all academic and administrative actions.
+        </p>
+
+    </div>
+
+    <!-- VALUE 4 -->
+
+    <div class="card">
+
+        <div class="icon">🤝</div>
+
+        <h3>Unity</h3>
+
+        <p>
+            The institution fosters collaboration,
+            teamwork, respect, and harmony among all members of the university.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- QUOTE -->
+
+<section class="quote-section">
+
+    <h2>Commitment to Excellence</h2>
+
+    <p>
+        Guided by these core values, Pampanga State Agricultural University
+        continues to provide relevant education, social responsibility,
+        sustainable development, and innovative services that contribute
+        to national and global progress.
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Agri PSAU | Core Values
+    </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* CARD ANIMATION */
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {threshold:0.2});
+
+cards.forEach(card => observer.observe(card));
+
+</script>
+
+</body>
+</html>

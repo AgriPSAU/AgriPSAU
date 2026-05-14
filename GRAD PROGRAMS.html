@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graduate Programs</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        min-height:100vh;
+        background:linear-gradient(135deg, #0b3d0b, #145214, #1f7a1f);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:50px;
+        overflow:hidden;
+    }
+
+    .container{
+        width:100%;
+        max-width:1200px;
+    }
+
+    .title{
+        text-align:center;
+        color:white;
+        font-size:50px;
+        margin-bottom:60px;
+        text-shadow:0 0 20px rgba(255,255,255,0.3);
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+        gap:30px;
+    }
+
+    .card{
+        position:relative;
+        background:rgba(255,255,255,0.08);
+        border:1px solid rgba(255,255,255,0.1);
+        backdrop-filter:blur(12px);
+        border-radius:25px;
+        padding:35px;
+        color:white;
+        overflow:hidden;
+        transition:0.4s;
+        box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+        transform:translateY(-12px) scale(1.03);
+        box-shadow:0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .card::after{
+        content:'';
+        position:absolute;
+        width:200px;
+        height:200px;
+        background:rgba(255,255,255,0.08);
+        border-radius:50%;
+        top:-80px;
+        right:-80px;
+    }
+
+    .icon{
+        font-size:60px;
+        margin-bottom:20px;
+        position:relative;
+        z-index:2;
+    }
+
+    .card h2{
+        font-size:26px;
+        margin-bottom:15px;
+        position:relative;
+        z-index:2;
+    }
+
+    .card p{
+        line-height:1.8;
+        color:#f1f1f1;
+        font-size:15px;
+        position:relative;
+        z-index:2;
+    }
+
+    .badge{
+        display:inline-block;
+        margin-top:20px;
+        padding:8px 16px;
+        border-radius:30px;
+        background:rgba(255,255,255,0.15);
+        font-size:13px;
+        font-weight:bold;
+        position:relative;
+        z-index:2;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="title">Graduate Programs</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h2>PhD in Agricultural Sciences</h2>
+            <p>
+                Advanced doctoral program specializing in 
+                <b>Animal Science</b> and <b>Crop Science</b>, 
+                designed for research, innovation, and leadership 
+                in agriculture.
+            </p>
+            <div class="badge">Doctoral Program</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h2>MS in Agriculture</h2>
+            <p>
+                Graduate-level studies focused on 
+                <b>Animal Science</b> and <b>Agronomy</b>, 
+                preparing students for agricultural research 
+                and professional practice.
+            </p>
+            <div class="badge">Master's Degree</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧬</div>
+            <h2>MS Biology</h2>
+            <p>
+                A science-focused graduate program that explores 
+                biological systems, environmental studies, laboratory 
+                research, and modern biological applications.
+            </p>
+            <div class="badge">Science Program</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

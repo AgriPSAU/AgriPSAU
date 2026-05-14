@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leadership Team</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(to right, #eef8ee, #f8fff8);
+    color:#1b4332;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size:38px;
+}
+
+header p{
+    margin-top:8px;
+    opacity:0.9;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:70px 20px 50px;
+}
+
+.hero h2{
+    font-size:55px;
+    color:#2e7d32;
+    margin-bottom:15px;
+    animation:fadeDown 1s ease;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#555;
+    line-height:1.7;
+    font-size:19px;
+    animation:fadeUp 1.3s ease;
+}
+
+/* TEAM SECTION */
+
+.team-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:30px;
+    padding-bottom:70px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px 25px;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+
+.icon{
+    font-size:65px;
+    margin-bottom:18px;
+}
+
+/* TEXT */
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.position{
+    font-weight:600;
+    color:#66bb6a;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>Agri PSAU</h1>
+
+    <p>University Leadership Team</p>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h2>Leadership Team</h2>
+
+    <p>
+        Meet the dedicated leaders of Pampanga State Agricultural University
+        who guide the institution toward excellence in education,
+        innovation, research, and public service.
+    </p>
+
+</section>
+
+<!-- TEAM SECTION -->
+
+<section class="team-container">
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+        <div class="icon">👩‍🏫</div>
+
+        <h3>Dr. Anita G. David</h3>
+
+        <div class="position">
+            University President
+        </div>
+
+        <p>
+            Leads the university in achieving academic excellence,
+            innovation, and institutional growth.
+        </p>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+        <div class="icon">📘</div>
+
+        <h3>Dr. Anita G. David</h3>
+
+        <div class="position">
+            VP for Academic Affairs
+        </div>
+
+        <p>
+            Oversees academic programs, curriculum development,
+            and educational quality standards.
+        </p>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+        <div class="icon">💼</div>
+
+        <h3>Ms. Mina Lyn G. Alviz</h3>
+
+        <div class="position">
+            Acting VP for Administration & Finance
+        </div>
+
+        <p>
+            Handles administrative operations, budgeting,
+            and financial management of the university.
+        </p>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="card">
+
+        <div class="icon">🌱</div>
+
+        <h3>Dr. Lyndon G. Solis</h3>
+
+        <div class="position">
+            VP for Planning & Innovation
+        </div>
+
+        <p>
+            Leads planning initiatives, innovation projects,
+            and agroecological resource development.
+        </p>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="card">
+
+        <div class="icon">🌍</div>
+
+        <h3>Mr. Carlo D. De Dios</h3>
+
+        <div class="position">
+            Director, Public Affairs & International Linkages
+        </div>
+
+        <p>
+            Strengthens international partnerships and manages
+            public communication initiatives.
+        </p>
+
+    </div>
+
+    <!-- CARD 6 -->
+
+    <div class="card">
+
+        <div class="icon">💻</div>
+
+        <h3>Rizza G. Baltazar</h3>
+
+        <div class="position">
+            Director, Management Information System
+        </div>
+
+        <p>
+            Oversees digital systems, technology services,
+            and university information management.
+        </p>
+
+    </div>
+
+    <!-- CARD 7 -->
+
+    <div class="card">
+
+        <div class="icon">🎓</div>
+
+        <h3>Arnello S. Valerio</h3>
+
+        <div class="position">
+            Director, Student Affairs & Services
+        </div>
+
+        <p>
+            Supports student welfare, leadership programs,
+            and campus engagement activities.
+        </p>
+
+    </div>
+
+    <!-- CARD 8 -->
+
+    <div class="card">
+
+        <div class="icon">✅</div>
+
+        <h3>Ms. Glenda Marie T. Maniago</h3>
+
+        <div class="position">
+            Director, Quality Management System Unit
+        </div>
+
+        <p>
+            Ensures institutional quality standards
+            and continuous improvement initiatives.
+        </p>
+
+    </div>
+
+    <!-- CARD 9 -->
+
+    <div class="card">
+
+        <div class="icon">🔬</div>
+
+        <h3>Dr. Norman G. De Jesus</h3>
+
+        <div class="position">
+            Director, ALIAS RDE Center
+        </div>
+
+        <p>
+            Leads agricultural research, development,
+            and extension initiatives of the university.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Agri PSAU | Leadership Team
+    </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* CARD ANIMATION */
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {threshold:0.2});
+
+cards.forEach(card => observer.observe(card));
+
+</script>
+
+</body>
+</html>
